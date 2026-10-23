@@ -1,0 +1,73 @@
+
+
+#button1 {
+    font-size: 16px;
+    background-color: red;
+    height: 10dvh;
+    width: 10dvw;
+    cursor: pointer;
+    border: 9px outset black;
+    border-radius: 9%;
+}
+body{
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+.layout-top {
+    background-color: black;
+    border: black;
+    padding: 16px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 2fr 1fr;
+    grid-template-rows: 150px;
+    gap: 16px;
+}
+
+.layout-top > div{
+    border: dotted, black;
+    background-color: blue;
+    border-radius: 8px;
+    padding: 16px;
+}
+.layout-places {
+    border: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 26px;
+}
+
+.layout-places > div{
+    border: dotted, black;
+    background-color: blue;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-contianer img {
+    position: absolute;
+    top: 5%;
+    left: 0.01%;
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.layout-places img {
+    width: 100%;
+    border-radius: 8px;
+}
