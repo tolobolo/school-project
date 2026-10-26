@@ -1,5 +1,6 @@
 
 
+
 #button1 {
     font-size: 16px;
     background-color: red;
@@ -23,8 +24,8 @@ body{
     padding: 16px;
     text-align: center;
     display: grid;
-    grid-template-columns: 200px 2fr 1fr;
-    grid-template-rows: 150px;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 90px;
     gap: 16px;
 }
 
@@ -33,6 +34,7 @@ body{
     background-color: blue;
     border-radius: 8px;
     padding: 16px;
+    text-align: center;
 }
 .layout-places {
     border: black;
@@ -51,20 +53,21 @@ body{
     padding: 16px;
 }
 
-.image-container {
-    position: relative;
-    overflow: hidden;
+.image-contianer button {
+    width: 90%;
+    height: 90%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    object-fit: contain;
 }
 
 .image-contianer img {
-    position: absolute;
-    top: 5%;
-    left: 0.01%;
-    width: 10%;
-    height: 10%;
-    object-fit: cover;
-    z-index: 100;
-    cursor: pointer;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    rotate: -30deg ;
 }
 
 .layout-places img {

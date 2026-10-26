@@ -17,12 +17,16 @@ button1.addEventListener("click", () => {
 });
 
 const places = [
-  { name: "Rotvollfjæra", img: "rotvollfjara.jpg", rating: 4, detail: "Rolig vann, fin brygge" },
-  { name: "Sted 2", img: "rotvollfjara.jpg", rating: 3, detail: "Beskrivelse" },
-  { name: "Sted 3", img: "rotvollfjara.jpg", rating: 5, detail: "Beskrivelse" },
-  { name: "Sted 4", img: "rotvollfjara.jpg", rating: 2, detail: "Beskrivelse" },
-  { name: "Sted 5", img: "rotvollfjara.jpg", rating: 4, detail: "Beskrivelse" },
-  { name: "Sted 6", img: "rotvollfjara.jpg", rating: 3, detail: "Beskrivelse" },
+  { name: "Rotvollfjæra flyttebrygge", img: "bilder/rotvollfjara.jpg", rating: 4, detail: "vanligvis Rolig vann, men kan være bølger fra sør-vind. du må også ta en liten svømme tur til flytte bryggen får du kan start" },
+  { name: "Grillstad strand", img: "bilder/grillstad.jpg", rating: 2, detail: "fint sted, med rolig vann og med strand for beach start, men kan være mange der folk" },
+  { name: "Ravnkloa brygge", img: "bilder/ravnkloa.jpg", rating: 3, detail: "fint sted med mange tilskuere, dokken er lite lav men forsatt murlig, det er kaiak trafikk og båter som kan lage bølger." },
+  { name: "Solsiden", img: "bilder/solsiden.jpg", rating: 1, detail: "fine sted veldig rolig vann, men mangler plass og dokken er veldig lav" },
+  { name: "Sted 5", img: "bilder/rotvollfjara.jpg", rating: 4, detail: "Beskrivelse" },
+  { name: "Sted 6", img: "bilder/rotvollfjara.jpg", rating: 3, detail: "Beskrivelse" },
+  { name: "Sted 7", img: "bilder/rotvollfjara.jpg", rating: 3, detail: "Beskrivelse" },
+  { name: "Sted 8", img: "bilder/rotvollfjara.jpg", rating: 3, detail: "Beskrivelse" },
+  { name: "Sted 9", img: "bilder/rotvollfjara.jpg", rating: 3, detail: "Beskrivelse" },
+  { name: "Sted 10", img: "bilder/rotvollfjara.jpg", rating: 3, detail: "Beskrivelse" },
 ];
 
 document.querySelector(".layout-places").innerHTML = places.map(p => `
