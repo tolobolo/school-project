@@ -43,23 +43,34 @@ applyFilters();
 
 /*pop up */
 
+function openCard(card) {
+  card.classList.add("active");
+  document.body.classList.add("dimmed");
+}
+
+function closeCard(card) {
+  card.classList.add("closing");
+  document.body.classList.add("undimming");
+  card.addEventListener("animationend", () => {
+    card.classList.remove("active", "closing");
+    document.body.classList.remove("dimmed", "undimming");
+  }, { once: true });
+}
+
 layoutPlaces.addEventListener("click", (e) => {
   const card = e.target.closest(".place");
-  if (!card) return;
+  if (!card || card.classList.contains("closing")) return;
 
-  const currentActive = document.querySelector(".place.active");
-  if (currentActive && currentActive !== card) {
-    currentActive.classList.remove("active");
+  if (card.classList.contains("active")) {
+    closeCard(card);
+  } else {
+    openCard(card);
   }
-
-  card.classList.toggle("active");
-  document.body.classList.toggle("dimmed", card.classList.contains("active"));
 });
 
 document.body.addEventListener("click", (e) => {
   if (e.target.classList.contains("dimmed")) {
-    const activeCard = document.querySelector(".place.active");
-    if (activeCard) activeCard.classList.remove("active");
-    document.body.classList.remove("dimmed");
+    const activeCard = document.querySelector(".place.active:not(.closing)");
+    if (activeCard) closeCard(activeCard);
   }
 });
