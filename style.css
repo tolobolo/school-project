@@ -14,7 +14,7 @@ body.dimmed::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 99;
 }
 /* top background and div position */
@@ -94,5 +94,13 @@ h1 {
     box-shadow: 0 10px 30px black;
     max-width: 400px;
     width: 80%;
-    background-color: 10%,white;
+    background-color: white;
+}
+
+.layout-top select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 4px;
+    font-size: 14px;
 }
