@@ -76,6 +76,8 @@ h1 {
 }
 .layout-places img {
     width: 100%;
+    aspect-ratio: 1079 / 504;
+    object-fit: cover;
     border-radius: 8px;
 }
 /* pop up  everythig under|*/

@@ -1,15 +1,17 @@
 const places = [
-  { name: "Rotvollfjæra flyttebrygge", img: "bilder/rotvollfjara.jpg", rating: 4, type: "pumpfoil", detail: "vanligvis Rolig vann, men kan være bølger fra sør-vind. du må også ta en liten svømme tur til flytte bryggen får du kan start" },
-  { name: "Grillstad strand", img: "bilder/grillstad.jpg", rating: 2, type: "pumpfoil", detail: "fint sted, med rolig vann og med strand for beach start, men kan være mange der folk" },
-  { name: "Ravnkloa brygge", img: "bilder/ravnkloa.jpg", rating: 3, type: "pumpfoil", detail: "fint sted med mange tilskuere, dokken er lite lav men forsatt murlig, det er kaiak trafikk og båter som kan lage bølger." },
-  { name: "Solsiden", img: "bilder/solsiden.jpg", rating: 1, type: "pumpfoil", detail: "fine sted veldig rolig vann, men mangler plass og dokken er veldig lav" },
-  { name: "Sted 5", img: "bilder/rotvollfjara.jpg", rating: 4, type: "wingfoil", detail: "Beskrivelse" },
-  { name: "Sted 6", img: "bilder/rotvollfjara.jpg", rating: 3, type: "wingfoil", detail: "Beskrivelse" },
-  { name: "Sted 7", img: "bilder/rotvollfjara.jpg", rating: 3, type: "wingfoil", detail: "Beskrivelse" },
-  { name: "Sted 8", img: "bilder/rotvollfjara.jpg", rating: 3, type: "wingfoil", detail: "Beskrivelse" },
+  { name: "Rotvollfjæra flyttebrygge", img: "bilder/rotvollfjara.jpg", rating: 4, type: "pumpfoil", detail: "Stedet byr vanligvis på rolig vann, men det kan oppstå bølger ved sørlig vind. Du må regne med en kort svømmetur ut til flytebrygga før du kan kaste deg uti og pumpe i gang." },
+  { name: "Grillstad strand", img: "bilder/grillstad.jpg", rating: 2, type: "pumpfoil", detail: "Stedet har rolig vann og en fin strand for beach start. Det kan likevel være en del folk og turgåere på området." },
+  { name: "Ravnkloa brygge", img: "bilder/ravnkloa.jpg", rating: 3, type: "pumpfoil", detail: "Her får du et kult sted med mange tilskuere, selv om dokken er litt lav. Vær oppmerksom på kajakktrafikk og båter som kan lage urolige bølger." },
+  { name: "Solsiden", img: "bilder/solsiden.jpg", rating: 1, type: "pumpfoil", detail: "Et fint område med helt rolig vann i vannflaten. Det er derimot svært lite plass å manøvrere på, og dokken er utfordrende lav." },
+  { name: "Djupvika", img: "bilder/djupvika.jpg", rating: 5, type: "wingfoil", detail: "Stedet fungerer utmerket på vind fra øst og nord, og byr på masse bølger. Vær likevel obs på at du kan bli dratt langt unna startområdet dersom du får problemer på vannet." },
+  { name: "Rye", img: "bilder/rye.jpg", rating: 3, type: "wingfoil", detail: "Et kjempefint spot som fungerer spesielt bra ved svak sørlig vind og byr på gode bølger. Ulempen er bare at det ligger litt langt unna." },
+  { name: "Øysand", img: "bilder/øysand.jpg", rating: 4, type: "wingfoil", detail: "En lang og langgrunn sandstrand der vest/nordvest (V/NV) gir den mest stabile og beste vinden for foiling. På nordlig eller sørvestlig vind kan vinden bli mer kastete på grunn av terrenget rundt" },
+  { name: "Ranheim", img: "bilder/ranheim.jpg", rating: 4, type: "wingfoil", detail: "Et fint område som fungerer best når vinden kommer fra nord, nordvest eller øst inn fjorden. Blir vinden for vestlig, skygger terrenget slik at vinden blir ujevn og ustabil." },
   { name: "Sted 9", img: "bilder/rotvollfjara.jpg", rating: 3, type: "wingfoil", detail: "Beskrivelse" },
-  { name: "Sted 10", img: "bilder/rotvollfjara.jpg", rating: 3, type: "wingfoil", detail: "Beskrivelse" },
 ];
+/*
+{ name: "Sted 9", img: "bilder/sted_bilde.jpg", rating: x, type: "wingfoil" eller "pumpfoil", detail: "aeskrivelse" },
+*/
 
 const layoutPlaces = document.querySelector(".layout-places");
 
